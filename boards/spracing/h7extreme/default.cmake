@@ -8,10 +8,13 @@ px4_add_board(
 	ARCHITECTURE cortex-m7
 	ROMFSROOT px4fmu_common
 	SERIAL_PORTS
-#		GPS1:/dev/ttyS0
-#		RC:/dev/ttyS1
-#		TEL2:/dev/ttyS2
-#		TEL4:/dev/ttyS3
+#		RC:/dev/ttyS0		#UART 1
+#		TEL1:/dev/ttyS1		#UART 2
+		GPS1:/dev/ttyS2		#UART 3
+#		TEL2:/dev/ttyS3		#UART 4
+		TEL3:/dev/ttyS4		#UART 5
+#		TEL4:/dev/ttyS5		#UART 6
+#		CONSOLE:/dev/ttyS6	#UART 8
 	DRIVERS
 		adc/board_adc
 		barometer # all available barometer drivers
